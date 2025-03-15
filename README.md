@@ -6,7 +6,7 @@ Ce projet est une solution au défi [QR code component](https://www.frontendment
 
 ##  **Aperçu du projet**
 
- **Lien du projet en ligne** : [Voir le projet](https://ton-lien.github.io/)
+ **Lien du projet en ligne** : [Voir le projet](https://joyful-rugelach-d181cc.netlify.app/)
 
  **Capture d'écran** :  
 ![Aperçu du projet](sreenshot.png)
