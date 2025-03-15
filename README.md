@@ -13,7 +13,7 @@ Ce projet est une solution au défi [QR code component](https://www.frontendment
 
 ---
 
-## 🔧 **Technologies utilisées**
+##  **Technologies utilisées**
 - **HTML5**
 - **CSS3** 
 - **Flexbox** 
