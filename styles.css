@@ -1,0 +1,86 @@
+/* 🌎 Styles généraux */
+body {
+  background-color: #d5e1ef;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📌 Conteneur principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 📦 Carte QR Code */
+.card {
+  background-color: #fff;
+  width: 90%; /* Prend 90% de la largeur sur petits écrans */
+  max-width: 320px; /* Limite à 320px sur grands écrans */
+  padding: 16px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 🖼 Image du QR Code */
+.qr-code img {
+  width: 100%;
+  max-width: 280px; /* Ne dépasse pas 280px */
+  border-radius: 10px;
+}
+
+/* 📝 Titre */
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f314f;
+  margin: 15px 0;
+}
+
+/* 🗒 Texte */
+p {
+  font-size: 14px;
+  color: #7d889e;
+  padding: 0 15px;
+}
+
+/* 📱 Responsive Design */
+
+/* 🟡 Petits écrans (moins de 375px) */
+@media (max-width: 375px) {
+  .card {
+    width: 95%; /* Prend plus de place sur petits écrans */
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+/* 🟢 Tablettes et écrans plus grands (≥ 768px) */
+@media (min-width: 768px) {
+  .card {
+    max-width: 350px; /* Un peu plus grand sur tablettes */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
