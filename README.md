@@ -9,7 +9,7 @@ Ce projet est une solution au défi [QR code component](https://www.frontendment
  **Lien du projet en ligne** : [Voir le projet](https://ton-lien.github.io/)
 
  **Capture d'écran** :  
-![Aperçu du projet](screenshot.png)
+![Aperçu du projet](sreenshot.png)
 
 ---
 
