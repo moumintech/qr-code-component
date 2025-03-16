@@ -1,7 +1,10 @@
+/* 🌎 Importation de la police Outfit */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
 /* 🌎 Styles généraux */
 body {
-  background-color: #d5e1ef;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d5e1ef; /* Couleur du guide */
+  font-family: "Outfit", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,64 +18,63 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   min-height: 100vh;
 }
 
 /* 📦 Carte QR Code */
 .card {
   background-color: #fff;
-  width: 90%; /* Prend 90% de la largeur sur petits écrans */
-  max-width: 320px; /* Limite à 320px sur grands écrans */
-  padding: 16px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 320px; /* Taille fixe pour éviter un élargissement */
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Ombre élégante */
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* 🖼 Image du QR Code */
+.card:hover {
+  transform: scale(1.05); /* Effet léger au survol */
+}
+
+/* 🔹 QR Code */
+.qr-code {
+  background-color: #2b7dfa; /* Fond bleu conforme au guide */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .qr-code img {
   width: 100%;
-  max-width: 280px; /* Ne dépasse pas 280px */
+  max-width: 160px;
   border-radius: 10px;
 }
 
 /* 📝 Titre */
 h1 {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 700; /* Bold */
   color: #1f314f;
-  margin: 15px 0;
+  margin: 20px 0 10px;
+  line-height: 120%;
 }
 
 /* 🗒 Texte */
 p {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 400; /* Regular */
   color: #7d889e;
-  padding: 0 15px;
+  margin-bottom: 24px;
+  line-height: 140%;
 }
 
 /* 📱 Responsive Design */
-
-/* 🟡 Petits écrans (moins de 375px) */
 @media (max-width: 375px) {
   .card {
-    width: 95%; /* Prend plus de place sur petits écrans */
-    padding: 12px;
-  }
-
-  h1 {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 12px;
-  }
-}
-
-/* 🟢 Tablettes et écrans plus grands (≥ 768px) */
-@media (min-width: 768px) {
-  .card {
-    max-width: 350px; /* Un peu plus grand sur tablettes */
+    width: 320px; /* Garde la taille fixe */
     padding: 20px;
   }
 
@@ -82,5 +84,20 @@ p {
 
   p {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 340px; /* Légèrement plus grand sur tablette */
+    padding: 28px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
   }
 }
